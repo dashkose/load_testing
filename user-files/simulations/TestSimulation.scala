@@ -19,7 +19,7 @@ class TestSimulation extends Simulation {
     )
 
   setUp(scn.inject(
-    rampUsersPerSec(0).to(10000).during(1.minutes)
+    rampUsersPerSec(0).to(3000).during(1.minutes)
   )).protocols(httpProtocol)
 }
 
